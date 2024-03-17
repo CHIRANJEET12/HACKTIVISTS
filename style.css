@@ -18,7 +18,7 @@ background-color: rgb(240, 240, 240);
     /* border-color: #000000; */
 }
 .box{
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgba(104, 103, 103, 0.062);
     padding: 10px 0px 15px;
     border-radius: 22px;
     width: 23%;
@@ -31,7 +31,7 @@ background-color: rgb(240, 240, 240);
     padding: 13px 0px 25px;
     width: 23%;
     height: 290px;
-    background-color: aliceblue;
+    background-color: rgb(224, 255, 255);
 }
 
 h1{
@@ -45,11 +45,25 @@ p{
 .sub{
     background-color: rgb(241, 235, 235);
     border-radius: 20px ;
-    width: 100%;
+    margin-left: 29px;
+    width: 80%;
     height: 60px;
 }
+
+
 h3{
     left: -20px;
     color: rgb(35, 35, 35);
-    margin: 40px 106px 0px;
+    margin: 35px 47px 0px;
+}
+p{
+    margin: 10px 47px 0px;
+}
+.img{
+    margin: 10px 47px 0px;
+    height: 62px;
+    width: 58px;
+}
+.subs{
+    margin-top: -28px;
 }
