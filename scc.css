@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom, #000000,rgb(0, 0, 0), #000000d3 ); /* Replace these colors with your desired gradient */
+  }
+  
+  .text-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: -202px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-container h1{
+    margin: 0;
+    font-size: 110px;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+
+  h1{
+    font-size:3rem ;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .wow{
+    color: rgb(255, 255, 255);
+    top: -192px;
+    position: relative;
+    padding: 20px 20px 20px;
+    background-color: #4e4e4e68;
+    border: solid rgb(81, 80, 80) 4px;
+    border-radius: 20px;
+
+    width: 470px;
+    left: 360px;
+  }
+  
+  H2{
+    color: rgb(254, 254, 254);
+    /* background-color: rgba(130, 130, 130, 0.263); */
+    box-shadow: #7f7f7f;
+    border-radius: 20px;
+    transition: 0.4s;
+    
+    /* padding: 20px 15px 5px; */
+    width: 50%;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    
+  }
+  H2:hover{
+    color: rgb(103, 184, 255);
+    /* background-color: rgb(255, 125, 123); */
+    transition: 0.2s;
+    width: 50%;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    
+  }
+  .o{
+    margin-left:20px ;
+    margin-top:-20px ;
+  }
+  a{
+    position: relative;
+    margin-left:20px ;
+    left: 363px;
+    top: -220px;
+    text-decoration: none;
+  }
+
+  .im{
+    position: relative;
+    left: 600px;
+   
+    top: -390px;
+    text-decoration: none;
+  }
+  h3{
+    font-family: 'Press Start 2P', cursive;
+  }

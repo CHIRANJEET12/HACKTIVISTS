@@ -1,7 +1,68 @@
-body{
+/* body{
 background-color: rgb(240, 240, 240);
-}
+} */
+body {
+    height: 100vh;
+     background: linear-gradient(90deg,#e52e71,#ff8a00);
+     background-repeat: no-repeat;
+  
+  }
+  
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 30%;
+    top: 20%;
+    width: 450px;
+    height: 450px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
 
+section{
+  background-color: #00000084;
+  width: 100%;
+  height: 110%;
+  display: flex;
+  /* font-family: 'Press Start 2P', cursive; */
+ 
+  /* justify-content: space-evenly; */
+  position: relative;
+}
+.er{
+  margin-left: 330px;
+  /* background-color: #e52e71; */
+  color: #e9b1c6;
+  font-family: 'Press Start 2P', cursive;
+}
+#re{
+  margin-left: 80px;
+  /* background-color: #e52e71; */
+  color: #e9b1c6;
+  font-family: 'Press Start 2P', cursive;
+}
 
 
 .cards{
@@ -9,7 +70,7 @@ background-color: rgb(240, 240, 240);
     justify-content: space-evenly;
     position: relative;
     
-    top: 100px;
+    top: 73px;
     height: 415px;
     width: 1263px;
     
@@ -20,32 +81,40 @@ background-color: rgb(240, 240, 240);
 .box{
     border: 5px solid rgba(104, 103, 103, 0.062);
     padding: 10px 0px 15px;
+    margin-top: 20px;
     border-radius: 22px;
     width: 23%;
     height: 290px;
     background-color: rgb(255, 255, 255);
 }
 .box:hover{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-shadow: 2px 2px 22px black;
-    padding: 13px 0px 25px;
+    padding: 11px 10px 25px;
+    transition: 0.4s;
     width: 23%;
     height: 290px;
-    background-color: rgb(224, 255, 255);
+    background-color: rgba(224, 255, 255, 0.406);
 }
 
 h1{
+  font-size: 1.4rem;
     left: -20px;
     margin: 20px 36px 0px;
+    font-family: "Poppins", sans-serif;
 }
 p{
     left: -20px;
     margin: 20px 36px 0px;
+    font-size: small;
+    font-family: "Poppins", sans-serif;
 }
 .sub{
     background-color: rgb(241, 235, 235);
     border-radius: 20px ;
     margin-left: 29px;
+    font-size: small;
+    font-family: "Poppins", sans-serif;
     width: 80%;
     height: 60px;
 }
@@ -55,6 +124,7 @@ h3{
     left: -20px;
     color: rgb(35, 35, 35);
     margin: 35px 47px 0px;
+    font-family: "Poppins", sans-serif;
 }
 p{
     margin: 10px 47px 0px;
@@ -66,4 +136,39 @@ p{
 }
 .subs{
     margin-top: -28px;
+    font-family: "Poppins", sans-serif;
+}
+input{
+    border: none;
+    /* color: aqua; */
+    color: rgb(222, 216, 216);
+    background-color: rgb(231, 226, 226);
+    border-radius: 20px;
+}
+.inp{
+    margin-left: 28px;
+    color: rgb(112, 112, 112);
+}
+
+.type{
+  margin-left: 28px;
+  width: 80%;
+  color: rgb(112, 112, 112);
+}
+.t{
+  width: 80%;
+  margin-left: 28px;
+}
+.y{
+  width: 80%;
+  margin-left: 28px;
+  background-color: rgb(231, 226, 226);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
